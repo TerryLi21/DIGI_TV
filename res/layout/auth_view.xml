@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:src="@drawable/header" />
+
+    <WebView
+        android:id="@+id/login_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" >
+    </WebView>
+
+    <include
+        android:id="@+id/layout_success"
+        layout="@layout/payment_success" />
+
+    <include
+        android:id="@+id/layout_failed"
+        layout="@layout/payment_failed" />
+
+</LinearLayout>

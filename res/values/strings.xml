@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DIGI TV</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- used in java -->
+    <!-- login -->
+    <string name="warn">Warn</string>
+    <string name="lifeExpired">This application is invalid due to expiration,Please contact customer service.</string>
+    <string name="sure">Sure</string>
+    <string name="activatio_fail">Activatio fail,Please contact customer service </string>
+    <string name="Prompt">Prompt</string>
+    <string name="OK">OK</string>
+    <string name="check_network">Please check the network</string>
+    <string name="no_open">No open network</string>
+    <string name="plan_error">plan update error</string>
+    <string name="exit">Exit</string>
+    <string name="go_on">continue</string>
+    <!-- playChannelActivity -->
+    <string name="no_program_info">No Info</string>
+
+    <!-- used in xml -->
+    <!-- main -->
+    <string name="free">Free Channel</string>
+    <string name="paid">Paid Channel</string>
+    <string name="account">Setting</string>
+    <!-- fragment paid -->
+    <string name="pls_charge">Please charge!</string>
+    <string name="charge">Charge</string>
+    <string name="click_here">Your Plan is almost out of day,please click here to charge.</string>
+    <!-- fragment setting -->
+    <string name="plan_info">Plan Info</string>
+    <string name="logout">Logout</string>
+    <string name="call">Call</string>
+    <!-- noti message -->
+    <string name="message">Message</string>
+
+</resources>

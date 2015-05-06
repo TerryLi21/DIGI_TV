@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linkin.mtv.digi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.linkin.mtv.MtvApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.linkin.mtv.digi.activity.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.linkin.mtv.digi.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.linkin.mtv.digi.activity.PlayChannelActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.linkin.mtv.digi.activity.NotiMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.linkin.mtv.digi.activity.AuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.linkin.mtv.digi.activity.PaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.linkin.mtv.service.DataUdateService" >
+        </service>
+        <service android:name="com.linkin.mtv.service.EpgUdateService" >
+        </service>
+        <service android:name="com.linkin.mtv.service.NotiMessageUpdateService" >
+        </service>
+    </application>
+
+</manifest>

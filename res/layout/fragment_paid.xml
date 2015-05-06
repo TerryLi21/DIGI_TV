@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/gv_fragment_paid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="4dp" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_paid_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dd000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.linkin.mtv.digi.view.SolaimanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pls_charge"
+            android:textSize="20sp" />
+
+        <com.linkin.mtv.digi.view.SolaimanTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/click_here"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_fragment_paid_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/PumpkinOrange"
+            android:padding="20dp"
+            android:text="@string/charge" />
+    </LinearLayout>
+
+</RelativeLayout>

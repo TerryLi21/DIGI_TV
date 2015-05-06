@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="DarkOrange">#E65100</color>
+    <color name="PumpkinOrange">#FFB74D</color>
+    <color name="TabsColor">#000000</color>
+    <color name="Transparent">#ff000000</color>
+    <color name="ToolbarColor">#ff239323</color>
+    <color name="tab1">#00b050</color>
+    <color name="tab2">#ffff00</color>
+    <color name="tab3">#00B0F0</color>
+    <color name="green">#00b050</color>
+    <color name="divider">#301119</color>
+
+</resources>

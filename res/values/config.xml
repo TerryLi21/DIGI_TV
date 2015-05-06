@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="web_url">http://79.143.186.63:8080</string>
+    <string name="customer_id">digi</string>
+    <!-- <string name="web_url">http://tv1.swadesh-tv.com:8080</string> -->
+    <!-- <string name="customer_id">digi</string> -->
+<!--     <string name="web_url">http://stb.ipmacro.com</string> -->
+<!--     <string name="customer_id">islamm</string> -->
+
+</resources>

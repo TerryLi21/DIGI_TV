@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/ToolbarColor" >
+
+        <com.linkin.mtv.digi.view.SolaimanTextView
+            android:id="@+id/tv_activity_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/free"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_activity_main_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:onClick="doClick"
+            android:src="@drawable/selector_bell" />
+
+        <ImageView
+            android:id="@+id/iv_activity_main_red_point"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_red_point"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#aaaaaa"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:paddingBottom="0.0dip"
+            android:paddingTop="0.0dip" >
+
+            <RadioButton
+                android:id="@+id/rb_index"
+                style="@style/Tab.RadioButton"
+                android:checked="true"
+                android:text="@string/free" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#676f6f" />
+
+            <RadioButton
+                android:id="@+id/rb_fav"
+                style="@style/Tab.RadioButton"
+                android:text="@string/paid" />
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#676f6f" />
+
+            <RadioButton
+                android:id="@+id/rb_search"
+                style="@style/Tab.RadioButton"
+                android:text="@string/account" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/view_bottom_line"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:background="@color/tab1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
