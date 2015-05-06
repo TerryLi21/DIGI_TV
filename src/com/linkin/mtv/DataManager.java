@@ -11,6 +11,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import com.linkin.mtv.data.Channel;
 import com.linkin.mtv.data.ChannelType;
@@ -26,7 +27,7 @@ public class DataManager {
 	private Context mContext;
 	private String mDataInfo;
 
-	List<ChannelType> typeList = null;
+	// List<ChannelType> typeList = null;
 	List<Channel> channelList = null;
 
 	boolean hasInit = false;
@@ -76,7 +77,7 @@ public class DataManager {
 			e.printStackTrace();
 		}
 		if (dm != null && dm.hasData()) { // 如果解析失败,而且有数据
-			typeList = dm.getTypeList();
+			// typeList = dm.getTypeList();
 			channelList = dm.getChannelList();
 			sendBroadcast(Global.ACTION_DATA_UPDATE);
 		}
@@ -165,13 +166,16 @@ public class DataManager {
 		DataMap dm = null;
 		try {
 			dm = DataParserHelper.parser(mContext, result);
+			Log.i("test", "data manager dm 0 name = "
+					+ dm.getChannelList().get(0).getName());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		if (dm != null && dm.hasData()) { // 如果解析失败,而且有数据
 			mDataInfo = result;
-			typeList = dm.getTypeList();
+			// typeList = dm.getTypeList();
 			channelList = dm.getChannelList();
+			Log.i("test", "data manager channels = " + channelList);
 			FileUtil.writeDataFile(LIVE_DATA_INFO, result, mContext);
 
 			sendBroadcast(Global.ACTION_DATA_UPDATE);

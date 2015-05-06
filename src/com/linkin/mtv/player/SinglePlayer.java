@@ -43,8 +43,10 @@ public class SinglePlayer implements ISinglePlayer {
 			mSinglePlayerListener.onAfterDownload(1000, countTime, 20);
 
 			if (mSinglePlayerListener != null) {
-				mSinglePlayerListener.onUrlChange(
-						"http://223.87.4.83:8112/ysten-business/live/cctv-3/1230962.m3u8", 0);
+				mSinglePlayerListener
+						.onUrlChange(
+								"http://live.aishang.ctlcdn.com/hls/ch196_10240048/ch196_10240048forsec.m3u8",
+								0);
 			}
 		}
 	};

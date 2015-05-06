@@ -388,7 +388,6 @@ public class PlayChannelActivity extends Activity {
 		try {
 			parse_url = ConfigHelper.AESDecrypt(mChannelList.get(mChannelPos)
 					.getPlayUrl());
-			Log.i("test", "play url = " + parse_url);
 			mSinglePlayer.play(parse_url, 0);
 		} catch (Exception e) {
 			e.printStackTrace();

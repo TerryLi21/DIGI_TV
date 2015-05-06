@@ -20,7 +20,7 @@ public class ConfigHelper {
 		return new SinglePlayer(context);
 	}
 
-	public static String dataUrl() { // DataUdateService url
+	public static String getDataUrl() { // DataUdateService url
 		return "http://121.42.146.91/liveListNew";
 	}
 

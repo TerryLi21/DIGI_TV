@@ -7,6 +7,7 @@
 package com.linkin.mtv.service;
 
 import android.os.Message;
+import android.util.Log;
 
 import com.linkin.mtv.DataManager;
 import com.linkin.mtv.digi.helper.ConfigHelper;
@@ -39,10 +40,8 @@ public class DataUdateService extends NetworkStateService {
 	}
 
 	private synchronized void update() {
-		String url = ConfigHelper.getWebUrl()
-				+ "/channel_resource/channel/liveListNew.html";
+		String url = ConfigHelper.getDataUrl();
 		String result = SynHtmlUtil.get(url);
-		// Log.i("test", "result = " + result);
 		mDataManager.update(result);
 	}
 }

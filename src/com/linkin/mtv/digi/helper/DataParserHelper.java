@@ -28,11 +28,12 @@ public class DataParserHelper {
 		}
 		DataMap map = new DataMap();
 		JSONObject obj = new JSONObject(con);
-		List<ChannelType> typeList = getTypeList(obj.getJSONArray("typeList"));
+		// List<ChannelType> typeList =
+		// getTypeList(obj.getJSONArray("typeList"));
 		List<Channel> channelList = getChannelList(context,
 				obj.getJSONArray("releaseList"));
 		map.setChannelList(channelList);
-		map.setTypeList(typeList);
+		// map.setTypeList(typeList);
 		return map;
 	}
 

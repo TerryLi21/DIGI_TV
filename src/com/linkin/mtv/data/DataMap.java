@@ -13,8 +13,11 @@ public class DataMap {
 	List<ChannelType> typeList;
 	List<Channel> channelList;
 
+	// public boolean hasData() {
+	// return typeList != null && channelList != null;
+	// }
 	public boolean hasData() {
-		return typeList != null && channelList != null;
+		return channelList != null;
 	}
 
 	public List<ChannelType> getTypeList() {
@@ -32,6 +35,5 @@ public class DataMap {
 	public void setChannelList(List<Channel> channelList) {
 		this.channelList = channelList;
 	}
-	
-	
+
 }
